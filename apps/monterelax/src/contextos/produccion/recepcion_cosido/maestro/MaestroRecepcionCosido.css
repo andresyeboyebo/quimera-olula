@@ -1,0 +1,46 @@
+.RecepcionCosido {
+    /* Ancla del panel flotante de filtros (position: absolute), igual que
+       .listado-cabecera en Listado.css; sin ella el panel sale fuera de la vista. */
+    .recepcion-cosido-cabecera {
+        position: relative;
+        --padding-horizontal: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin: 1rem 0;
+    }
+
+    .recepcion-cosido-contador {
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    .recepcion-cosido-lista {
+        margin-top: 0.75rem;
+    }
+
+    .recepcion-cosido-fila {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.75rem 0.5rem;
+        border-bottom: 1px solid var(--color-borde, #ddd);
+    }
+
+    .recepcion-cosido-texto {
+        flex: 1;
+    }
+
+    .recepcion-cosido-avatar.cosido {
+        background-color: var(--color-exito-claro, #c8e6c9);
+        color: var(--color-exito, #2e7d32);
+    }
+}
+
+
+.RecepcionCosido .recepcion-cosido-indicadores {
+    display: flex;
+    gap: 0.5rem;
+}
